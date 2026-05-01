@@ -329,3 +329,22 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.lang-switch {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 16px;
+  margin: 0 6px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lang-switch button:hover {
+  background: #ffffff;
+  color: #050b13;
+}
