@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #050b13;
@@ -80,6 +84,7 @@ body {
 .hero-text {
   max-width: 720px;
   z-index: 2;
+  padding-right: 40px;
 }
 
 .hero-text h2 {
@@ -125,7 +130,6 @@ body {
   margin-left: auto;
 }
 
-/* OVDE UBACUJEŠ SVOJU SLIKU */
 .photo-placeholder img {
   max-height: 600px;
   max-width: 440px;
@@ -170,6 +174,85 @@ body {
   margin-bottom: 18px;
 }
 
+.section {
+  padding: 80px 7%;
+}
+
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 550px;
+  text-align: left;
+}
+
+.about-intro {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-text p {
+  color: #cfd7df;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.about-highlights {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.about-image img {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.contact {
+  background: #030911;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact p {
+  color: #cfd7df;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 30px 7%;
+  text-align: center;
+  background: #02060d;
+  color: #9fa9b5;
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .nav {
     padding: 24px;
@@ -187,7 +270,11 @@ body {
   .hero-content {
     flex-direction: column;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px 7% 0 7%;
+  }
+
+  .hero-text {
+    padding-right: 0;
   }
 
   .hero-text h2 {
@@ -212,52 +299,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.12);
     padding-bottom: 24px;
   }
-}
 
-	.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  max-width: 1100px;
-  margin: auto;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  max-width: 550px;
-  text-align: left;
-}
-
-.about-intro {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.about-text p {
-  color: #cfd7df;
-  line-height: 1.7;
-  margin-bottom: 18px;
-  font-size: 16px;
-}
-
-.about-highlights {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.about-image img {
-  width: 260px;
-  border-radius: 10px;
-}
-
-@media (max-width: 900px) {
   .about-container {
     text-align: center;
   }
@@ -270,13 +312,12 @@ body {
     grid-template-columns: 1fr;
   }
 }
-	
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<section class="hero" id="home">
 
   <header class="nav">
     <div class="logo">
@@ -285,7 +326,7 @@ body {
     </div>
 
     <nav class="menu">
-      <a href="#">HOME</a>
+      <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
       <a href="#work">WORK</a>
       <a href="#blog">BLOG</a>
@@ -310,7 +351,7 @@ body {
     </div>
 
     <div class="photo-placeholder">
-	<img src="images/bojan.png" alt="Bojan Vojinovic">
+      <img src="images/bojan.png" alt="Bojan Vojinovic">
     </div>
   </div>
 
@@ -378,6 +419,26 @@ body {
 
   </div>
 </section>
-	
+
+<section class="section" id="blog">
+  <h2>Blog</h2>
+  <p style="text-align:center; color:#cfd7df;">
+    Insights on Data Governance, Data Quality, Master Data Management and practical data implementation.
+  </p>
+  <p style="text-align:center; color:#9fa9b5; margin-top:12px;">
+    Coming soon.
+  </p>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:bojan.vojinovic@hotmail.com">bojan.vojinovic@hotmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/bojan-vojinovic/" target="_blank">linkedin.com/in/bojan-vojinovic</a></p>
+</section>
+
+<footer class="footer">
+  © 2026 Bojan Vojinovic. All rights reserved.
+</footer>
+
 </body>
 </html>
