@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog | Bojan Vojinovic</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">
+    <h1>BOJAN VOJINOVIC</h1>
+    <p>DATA GOVERNANCE & DATA QUALITY</p>
+  </div>
+
+  <nav class="menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="work.html">WORK</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a class="connect" href="contact.html">LET’S CONNECT</a>
+  </nav>
+</header>
+
 <section class="page">
   <h2>Blog</h2>
 
@@ -6,26 +36,65 @@
     <button onclick="setLang('sr')">🇷🇸 SR</button>
   </div>
 
-  <div id="content-en" class="blog-box">
+  <!-- ENGLISH VERSION -->
+  <div id="content-en" class="blog-card">
+
+    <p style="color:#9fa9b5; font-size:14px; margin-bottom:10px;">
+      April 2026 • 3 min read
+    </p>
+
     <h3>Data Governance in Practice</h3>
+
     <p>
       Data Governance is often misunderstood as documentation or control. In reality, it is about creating a system where data is trusted, structured, and aligned with business processes.
     </p>
+
     <p>
-      In practice, this means defining ownership, implementing validation rules, and ensuring consistency across systems.
+      Most organizations struggle not because they lack data, but because they lack consistency. Different systems, different rules, and no clear ownership lead to unreliable reporting and poor decision-making.
     </p>
+
+    <p>
+      In practice, Data Governance means defining ownership, implementing validation rules, and ensuring that data flows are aligned across systems, from source to reporting.
+    </p>
+
+    <p>
+      The goal is simple: turn data into a reliable asset that supports business decisions, not something that creates uncertainty.
+    </p>
+
   </div>
 
-  <div id="content-sr" class="blog-box" style="display:none;">
+  <!-- SERBIAN VERSION -->
+  <div id="content-sr" class="blog-card" style="display:none;">
+
+    <p style="color:#9fa9b5; font-size:14px; margin-bottom:10px;">
+      April 2026 • 3 min čitanja
+    </p>
+
     <h3>Data Governance u praksi</h3>
+
     <p>
       Data Governance se često pogrešno posmatra kao dokumentacija ili kontrola. U realnosti, to je sistem koji obezbeđuje da su podaci pouzdani, strukturirani i usklađeni sa biznis procesima.
     </p>
+
     <p>
-      U praksi to znači definisanje vlasništva nad podacima, implementaciju validacionih pravila i konzistentnost između sistema.
+      Većina kompanija nema problem sa nedostatkom podataka, već sa njihovom nekonzistentnošću. Različiti sistemi, različita pravila i nepostojanje jasnog vlasništva dovode do nepouzdanih izveštaja.
     </p>
+
+    <p>
+      U praksi, Data Governance znači definisanje vlasništva nad podacima, implementaciju validacionih pravila i usklađivanje tokova podataka kroz sve sisteme.
+    </p>
+
+    <p>
+      Cilj je jednostavan: pretvoriti podatke u pouzdan alat za donošenje odluka, a ne izvor nesigurnosti.
+    </p>
+
   </div>
+
 </section>
+
+<footer class="footer">
+  © 2026 Bojan Vojinovic. All rights reserved.
+</footer>
 
 <script>
 function setLang(lang) {
@@ -33,3 +102,6 @@ function setLang(lang) {
   document.getElementById("content-sr").style.display = (lang === "sr") ? "block" : "none";
 }
 </script>
+
+</body>
+</html>

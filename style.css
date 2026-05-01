@@ -348,3 +348,32 @@ a {
   background: #ffffff;
   color: #050b13;
 }
+
+/* BLOG CARD UPGRADE */
+
+.blog-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+.blog-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.blog-card p {
+  color: #cfd7df;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.lang-switch button {
+  border-radius: 6px;
+  transition: 0.3s;
+}
