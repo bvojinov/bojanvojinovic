@@ -213,6 +213,64 @@ body {
     padding-bottom: 24px;
   }
 }
+
+	.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 550px;
+  text-align: left;
+}
+
+.about-intro {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #cfd7df;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.about-highlights {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.about-image img {
+  width: 260px;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+	
 </style>
 </head>
 
@@ -284,5 +342,42 @@ body {
   </div>
 </section>
 
+<section class="section" id="about">
+  <h2>About</h2>
+
+  <div class="about-container">
+
+    <div class="about-text">
+      <p class="about-intro">
+        Data Governance & Data Quality Lead with 9+ years of experience across finance and retail environments.
+      </p>
+
+      <p>
+        I specialize in practical implementation of Data Governance frameworks, including data ownership models, validation rules, and master data structuring.
+      </p>
+
+      <p>
+        My work focuses on aligning business processes, DWH systems, and reporting to ensure data consistency and reliability across organizations.
+      </p>
+
+      <p>
+        With a strong hands-on approach using SQL, Excel VBA, and Power BI, I design scalable solutions that transform complex data challenges into structured and actionable insights.
+      </p>
+
+      <div class="about-highlights">
+        <div>✔ Data Governance Frameworks</div>
+        <div>✔ Data Quality & Validation</div>
+        <div>✔ Master Data Structuring</div>
+        <div>✔ Data Ownership & Stewardship</div>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="images/bojan.png" alt="Bojan Vojinovic">
+    </div>
+
+  </div>
+</section>
+	
 </body>
 </html>
