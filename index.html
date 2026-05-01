@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bojan Vojinovic | Data Governance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #050b13;
+  color: #ffffff;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(5,11,19,0.95) 0%, rgba(5,11,19,0.75) 45%, rgba(5,11,19,0.35) 100%),
+    url("images/bg.jpg") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+}
+
+.logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.logo p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #d0d7df;
+  margin-top: 6px;
+}
+
+.menu {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.connect {
+  border: 1px solid #ffffff;
+  padding: 14px 22px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 0 7%;
+}
+
+.hero-text {
+  max-width: 720px;
+  z-index: 2;
+}
+
+.hero-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero-text .thin {
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.hero-text p {
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1.6;
+  max-width: 620px;
+  color: #f1f1f1;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 38px;
+  border: 1px solid #ffffff;
+  padding: 16px 32px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.photo-placeholder {
+  width: 440px;
+  height: 600px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+/* OVDE UBACUJEŠ SVOJU SLIKU */
+.photo-placeholder img {
+  max-height: 600px;
+  max-width: 440px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(3, 9, 17, 0.96);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 46px 7%;
+  gap: 36px;
+}
+
+.service {
+  border-right: 1px solid rgba(255,255,255,0.12);
+  padding-right: 32px;
+}
+
+.service:last-child {
+  border-right: none;
+}
+
+.service h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.service p {
+  color: #cfd7df;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 34px;
+  color: #5b7cff;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 24px;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 42px;
+  }
+
+  .hero-text .thin {
+    letter-spacing: 4px;
+  }
+
+  .photo-placeholder {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding-bottom: 24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+  <header class="nav">
+    <div class="logo">
+      <h1>BOJAN VOJINOVIC</h1>
+      <p>DATA GOVERNANCE & DATA QUALITY</p>
+    </div>
+
+    <nav class="menu">
+      <a href="#">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <a href="#blog">BLOG</a>
+      <a href="#contact">CONTACT</a>
+      <a class="connect" href="#contact">LET’S CONNECT</a>
+    </nav>
+  </header>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>
+        DATA GOVERNANCE<br>
+        & DATA QUALITY<br>
+        <span class="thin">IN PRACTICE</span>
+      </h2>
+
+      <p>
+        I help organizations structure, validate and trust their data through practical implementation.
+      </p>
+
+      <a href="#work" class="btn">VIEW MY WORK</a>
+    </div>
+
+    <div class="photo-placeholder">
+	<img src="images/bojan.png" alt="Bojan Vojinovic">
+    </div>
+  </div>
+
+</section>
+
+<section class="services" id="work">
+  <div class="service">
+    <div class="icon">▱</div>
+    <h3>DATA GOVERNANCE</h3>
+    <p>Frameworks, ownership models and governance processes that drive accountability and value.</p>
+  </div>
+
+  <div class="service">
+    <div class="icon">▰</div>
+    <h3>DATA QUALITY</h3>
+    <p>Validation rules, monitoring and issue management for accurate and trusted data.</p>
+  </div>
+
+  <div class="service">
+    <div class="icon">⌘</div>
+    <h3>MASTER DATA</h3>
+    <p>Structuring and maintaining key domains like location, vendor and product data.</p>
+  </div>
+
+  <div class="service">
+    <div class="icon">▥</div>
+    <h3>DATA STRATEGY</h3>
+    <p>Turning data into a strategic asset aligned with business goals and decisions.</p>
+  </div>
+</section>
+
+</body>
+</html>
