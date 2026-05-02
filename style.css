@@ -9,35 +9,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #111;
-  background-color: #ffffff;
+  background: #ffffff;
   line-height: 1.6;
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* BACKGROUND IMAGE */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 65%;
-  height: 100%;
-  background: url("images/background-network.png") no-repeat right center;
-  background-size: cover;
-  opacity: 0.24;
-  z-index: -2;
-  pointer-events: none;
-}
-
-/* WHITE OVERLAY */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.72);
-  z-index: -1;
-  pointer-events: none;
 }
 
 /* GLOBAL */
@@ -80,10 +53,7 @@ p {
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(10px);
-  position: relative;
-  z-index: 10;
+  background: #fff;
 }
 
 .logo h1 {
@@ -116,7 +86,7 @@ p {
 /* HERO */
 .hero {
   padding: 100px 40px;
-  background: rgba(255, 255, 255, 0.84);
+  background: #ffffff;
 }
 
 .hero-content {
@@ -146,7 +116,6 @@ p {
 .photo-placeholder img {
   width: 280px;
   border-radius: 10px;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.10);
 }
 
 /* BUTTON */
@@ -164,36 +133,18 @@ p {
 
 .btn:hover {
   background: #333;
-  transform: translateY(-2px);
 }
 
 /* PAGE HERO */
 .page-hero {
-  background: rgba(247, 247, 247, 0.90);
-}
-
-/* MAIN WHITE SECTIONS */
-.problem,
-.value,
-.approach,
-.case,
-.about-intro,
-.about-experience,
-.principles,
-.skills-section,
-.contact-intro,
-.process,
-.experience {
-  background: rgba(255, 255, 255, 0.86);
-}
-
-/* ALTERNATIVE LIGHT SECTIONS */
-.case.alt,
-.final-cta {
-  background: rgba(247, 247, 247, 0.92);
+  background: #f7f7f7;
 }
 
 /* PROBLEM */
+.problem {
+  background: #ffffff;
+}
+
 .problem-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -205,16 +156,14 @@ p {
   padding: 20px;
   border: 1px solid #eee;
   font-weight: 500;
-  background: rgba(255, 255, 255, 0.88);
-  transition: 0.3s;
+  background: #ffffff;
 }
 
-.problem-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+/* VALUE / SERVICES */
+.value {
+  background: #ffffff;
 }
 
-/* SERVICES */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -223,15 +172,14 @@ p {
 }
 
 .service {
-  padding: 22px;
+  padding: 20px;
   border: 1px solid #eee;
   transition: 0.3s;
-  background: rgba(255, 255, 255, 0.88);
+  background: #ffffff;
 }
 
 .service:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
 }
 
 .service h3 {
@@ -244,6 +192,10 @@ p {
 }
 
 /* APPROACH */
+.approach {
+  background: #ffffff;
+}
+
 .approach-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -252,15 +204,7 @@ p {
 }
 
 .approach-card {
-  padding: 22px;
-  border: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.88);
-  transition: 0.3s;
-}
-
-.approach-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
 }
 
 .approach-card span {
@@ -273,6 +217,14 @@ p {
 }
 
 /* CASE STUDY */
+.case {
+  background: #ffffff;
+}
+
+.case.alt {
+  background: #f9f9f9;
+}
+
 .case-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -280,27 +232,22 @@ p {
   margin-top: 40px;
 }
 
-.case-block {
-  padding: 22px;
-  border: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.88);
-}
-
 .case-block h3 {
   margin-bottom: 10px;
 }
 
 /* EXPERIENCE */
+.experience {
+  background: #ffffff;
+}
+
 .experience-list p {
   margin-bottom: 10px;
-  padding: 14px 18px;
-  border-left: 3px solid #111;
-  background: rgba(255, 255, 255, 0.86);
 }
 
 /* STATEMENT */
 .statement {
-  background: linear-gradient(135deg, #111 0%, #1d1d1d 100%);
+  background: #111;
   color: #fff;
   text-align: center;
 }
@@ -315,6 +262,13 @@ p {
 }
 
 /* ABOUT */
+.about-intro,
+.about-experience,
+.principles,
+.skills-section {
+  background: #ffffff;
+}
+
 .about-layout {
   display: flex;
   gap: 40px;
@@ -327,8 +281,8 @@ p {
 .about-card {
   flex: 1;
   border: 1px solid #eee;
-  padding: 24px;
-  background: rgba(255, 255, 255, 0.88);
+  padding: 20px;
+  background: #ffffff;
 }
 
 .about-card h3 {
@@ -354,8 +308,8 @@ p {
 
 .experience-card {
   border: 1px solid #eee;
-  padding: 22px;
-  background: rgba(255, 255, 255, 0.88);
+  padding: 20px;
+  background: #ffffff;
 }
 
 .experience-card h3 {
@@ -365,12 +319,14 @@ p {
 /* PRINCIPLES */
 .principles-list p {
   margin-bottom: 15px;
-  padding: 16px 18px;
-  border: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.88);
 }
 
 /* CONTACT */
+.contact-intro,
+.process {
+  background: #ffffff;
+}
+
 .contact-layout {
   display: flex;
   gap: 40px;
@@ -383,8 +339,8 @@ p {
 .contact-box {
   flex: 1;
   border: 1px solid #eee;
-  padding: 24px;
-  background: rgba(255, 255, 255, 0.88);
+  padding: 20px;
+  background: #ffffff;
 }
 
 .contact-box h3 {
@@ -415,12 +371,6 @@ p {
   margin-top: 40px;
 }
 
-.process-card {
-  padding: 22px;
-  border: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.88);
-}
-
 .process-card span {
   font-size: 14px;
   color: #999;
@@ -433,6 +383,7 @@ p {
 /* FINAL CTA */
 .final-cta {
   text-align: center;
+  background: #f7f7f7;
 }
 
 .final-cta h2 {
@@ -450,20 +401,11 @@ p {
   font-size: 13px;
   color: #777;
   border-top: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.94);
+  background: #ffffff;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  body::before {
-    width: 100%;
-    opacity: 0.12;
-  }
-
-  body::after {
-    background: rgba(255, 255, 255, 0.82);
-  }
-
   .nav {
     flex-direction: column;
     gap: 15px;
