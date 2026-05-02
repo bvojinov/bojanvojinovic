@@ -350,3 +350,33 @@ p {
     flex-direction: column;
   }
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  background-color: #ffffff;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* background slika za ceo sajt */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("images/background-network.png") no-repeat right center;
+  background-size: cover;
+  opacity: 0.18;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* beli overlay da slika ne bude prejaka */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.72);
+  z-index: -1;
+  pointer-events: none;
+}
