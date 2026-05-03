@@ -133,8 +133,6 @@ p {
 .photo-placeholder img {
   width: 290px;
   border-radius: 12px;
-  border: none;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.30);
 }
 
 /* BUTTON */
