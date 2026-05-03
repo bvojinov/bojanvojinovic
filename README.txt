@@ -1,10 +1,10 @@
-Bilingual version of bvojinovic.com
+Personal professional bilingual version of bvojinovic.com
 
 Structure:
-- English pages are in the root folder: index.html, about.html, work.html, contact.html
-- Serbian pages are in the /sr folder: sr/index.html, sr/about.html, sr/work.html, sr/contact.html
-- CSS is shared: style.css
-- Background image path: images/bg.jpg
+- English pages are in root: index.html, about.html, work.html, contact.html, blog.html
+- Serbian pages are in /sr: sr/index.html, sr/about.html, sr/work.html, sr/contact.html, sr/blog.html
+- Shared CSS: style.css
+- Background image: images/bg.jpg
 - Your personal photo should remain at: images/bojan.png
 
-Upload the full folder structure to your hosting/GitHub Pages.
+Important: This version is positioned as a personal professional / thought-leadership site, not a consulting services site.
