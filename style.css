@@ -131,6 +131,7 @@ p {
 .photo-placeholder img {
   width: 290px;
   border-radius: 12px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.30);
   border: none;
 }
 
@@ -524,4 +525,15 @@ p {
   .section-inner {
     padding: 60px 20px;
   }
+}
+
+/* LANGUAGE SWITCH */
+.language {
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 4px;
+}
+
+.language:hover {
+  background: rgba(255,255,255,0.12);
 }
